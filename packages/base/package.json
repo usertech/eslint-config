@@ -1,0 +1,25 @@
+{
+  "author": "Vaclav Novotny",
+  "description": "ESLint preset enforcing same conventions in U+ projects",
+  "keywords": [
+    "eslint",
+    "u+"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@usertech/eslint-config-base",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.0",
+  "peerDependencies": {
+    "eslint": ">=5"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4"
+  }
+}

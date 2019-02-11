@@ -1,0 +1,7 @@
+# ignore node_modules directory anywhere
+node_modules/
+
+# error logs
+lerna-debug.log*
+npm-debug.log*
+yarn-error.log*

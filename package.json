@@ -1,0 +1,11 @@
+{
+  "name": "eslint-config",
+  "private": true,
+  "workspaces": [
+    "packages/base",
+    "packages/typescript"
+  ],
+  "devDependencies": {
+    "lerna": "^3.11.0"
+  }
+}

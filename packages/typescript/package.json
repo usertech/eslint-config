@@ -1,0 +1,22 @@
+{
+  "author": "Vaclav Novotny",
+  "description": "ESLint preset enforcing same conventions in U+ projects",
+  "keywords": [
+    "eslint",
+    "u+"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@usertech/eslint-config-typescript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.0",
+  "peerDependencies": {
+    "eslint": ">=5",
+    "typescript": ">=3.2"
+  },
+  "dependencies": {
+    "@usertech/eslint-config-base": "^0.0.0"
+  }
+}
