@@ -9,7 +9,7 @@
   "main": "index.js",
   "name": "@usertech/eslint-config-typescript",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "version": "0.0.0",
   "peerDependencies": {
@@ -17,6 +17,11 @@
     "typescript": ">=3.2"
   },
   "dependencies": {
-    "@usertech/eslint-config-base": "^0.0.0"
+    "@typescript-eslint/eslint-plugin": "1.3.0",
+    "@typescript-eslint/parser": "1.3.0",
+    "@usertech/eslint-config-base": "file:../base/"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.2"
   }
 }
