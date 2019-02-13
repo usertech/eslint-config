@@ -5,13 +5,13 @@
 
 1.  install ESLint and dependencies
 
-    `yarn add --dev eslint@5 @usertech/eslint-config`
+    `yarn add --dev eslint@5 @usertech/eslint-config-typescript`
 
 1.  Create/Modify `.eslintrc.js` file in root of your project and paste following snippet inside
 
 ```js
 module.exports = {
-  "extends": ["@usertech/eslint-config"]
+  "extends": ["@usertech/eslint-config-typescript"]
 }
 ```
 
@@ -21,6 +21,8 @@ Most IDE's has support for eslint, which will highlight linting errors in source
 
 * [setting ESLint in VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 * [setting ESLint in WebStorm](https://www.jetbrains.com/help/webstorm/eslint.html)
+
+**NOTE:** WebStorm currently not use ESLint for TypeScript files. To fix this, you must set typescript extensions in registry, as advised in [this forum post](https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000225170-ESLint-and-ts-Typescript-files?page=1#community_comment_360000332879).
 
 ## ESLint vs TSLint
 
@@ -34,13 +36,8 @@ This config is fully capable of linting TypeScript files. You may drop TSLint in
   2.  usage of this preset on several production projects
   3.  best-practices and common gotchas of the language, runtime and ecosystem.
 
-  > Although, everyone can be wrong or have different opinion, so don't hesitate to challenge the status quo!
+> Although, everyone can be wrong or have different opinion, so don't hesitate to challenge the status quo!
 
-* Config contains rules for ES5, ES2015+ and plugins like [react](https://github.com/yannickcr/eslint-plugin-react) and [import](https://github.com/benmosher/eslint-plugin-import)
-
-* Config does not includes prettier - [see official docs how to integrate with ESLint](https://prettier.io/docs/en/eslint.html)
-
-* TODO: add support for [jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y)
 
 ## Developments
 
