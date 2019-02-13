@@ -10,6 +10,10 @@ packages/
 
 ## Development
 
+This project leverages [yarn workspaces](https://yarnpkg.com/lang/en/docs/workspaces/), to install all dependencies, just run `yarn` in root folder.
+
+### Commiting
+
 This project uses [conventional commits](www.conventionalcommits.org/) enforced via [commitlint](https://github.com/conventional-changelog/commitlint).
 
 Commit messages must start like this
@@ -34,3 +38,6 @@ optional `scope` may be provided to further describe field of change, eq `typesc
 
 Thanks to this convention, we are able to generate CHANGELOG and maintain semantic versioning.
 
+### Publishing
+
+This project uses [standard-version](https://www.npmjs.com/package/standard-version). Run `yarn release` to prepare package for publishing.

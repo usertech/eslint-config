@@ -8,3 +8,6 @@ yarn-error.log*
 
 # misc
 .DS_Store
+
+# use yarn for maintaining project depepndecies
+package-lock.json
