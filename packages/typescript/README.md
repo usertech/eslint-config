@@ -9,11 +9,18 @@
 
 1.  Create/Modify `.eslintrc.js` file in root of your project and paste following snippet inside
 
-```js
-module.exports = {
-  "extends": ["@usertech/eslint-config-typescript"]
-}
-```
+    ```js
+    module.exports = {
+      "extends": ["@usertech/eslint-config-typescript"]
+    }
+    ```
+1. ESLint by default checks only _.js_ file extensions, not _.ts_ and _.tsx_, nor even _.jsx_ extensions. Always run ESlint wint [`--ext`](https://eslint.org/docs/user-guide/command-line-interface#--ext) option listing extension you want check in your project, eg.:
+
+    ```
+    eslint --ext .js,.jsx.ts,.tsx src/
+    ```
+    
+    
 
 ## IDE Support
 
@@ -37,8 +44,3 @@ This config is fully capable of linting TypeScript files. You may drop TSLint in
   3.  best-practices and common gotchas of the language, runtime and ecosystem.
 
 > Although, everyone can be wrong or have different opinion, so don't hesitate to challenge the status quo!
-
-
-## Developments
-
-We use https://conventionalcommits.org for commit messages.

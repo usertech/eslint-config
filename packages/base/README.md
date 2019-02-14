@@ -9,11 +9,16 @@
 
 1.  Create/Modify `.eslintrc.js` file in root of your project and paste following snippet inside
 
-```js
-module.exports = {
-  "extends": ["@usertech/eslint-config-base"]
-}
-```
+    ```js
+    module.exports = {
+      "extends": ["@usertech/eslint-config-base"]
+    }
+    ```
+1. ESLint by default checks only _.js_ file extension, not _.jsx_. If you have _.jsx_ files, run eslint wits [`--ext`](https://eslint.org/docs/user-guide/command-line-interface#--ext) option, eg.:
+
+    ```
+    eslint --ext .js,.jsx src/
+    ```
 
 ## IDE Support
 
