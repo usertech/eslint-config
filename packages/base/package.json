@@ -21,5 +21,6 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4"
-  }
+  },
+  "gitHead": "e004aeb98d36d0b1fd8e4e8526728da5accd845c"
 }
