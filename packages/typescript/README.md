@@ -1,4 +1,4 @@
-### U+ ESLint config
+### U+ ESLint config TypeScript
 > A shareable ESLint configuration file
 
 ## Installation
@@ -17,7 +17,7 @@
 1. ESLint by default checks only _.js_ file extensions, not _.ts_ and _.tsx_, nor even _.jsx_ extensions. Always run ESlint wint [`--ext`](https://eslint.org/docs/user-guide/command-line-interface#--ext) option listing extension you want check in your project, eg.:
 
     ```
-    eslint --ext .js,.jsx.ts,.tsx src/
+    eslint --ext .js,.jsx,.ts,.tsx src/
     ```
     
     

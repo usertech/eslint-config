@@ -1,4 +1,4 @@
-### U+ ESLint config
+### U+ ESLint config base
 > A shareable ESLint configuration file
 
 ## Installation

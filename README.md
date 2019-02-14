@@ -1,4 +1,4 @@
-### U+ ESLint config
+# U+ ESLint config
 
 monorepo for eslint config, currently contains two configs
 
@@ -14,7 +14,7 @@ This project leverages [yarn workspaces](https://yarnpkg.com/lang/en/docs/worksp
 
 ### Commiting
 
-This project uses [conventional commits](www.conventionalcommits.org/) enforced via [commitlint](https://github.com/conventional-changelog/commitlint).
+This project uses [conventional commits](https://www.conventionalcommits.org/) enforced via [commitlint](https://github.com/conventional-changelog/commitlint).
 
 Commit messages must start like this
 
@@ -40,4 +40,4 @@ Thanks to this convention, we are able to generate CHANGELOG and maintain semant
 
 ### Publishing
 
-This project uses [standard-version](https://www.npmjs.com/package/standard-version). Run `yarn release` to prepare package for publishing.
+This project uses [lerna](https://lernajs.io). Run `yarn release` to prepare package for publishing.

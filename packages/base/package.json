@@ -1,5 +1,6 @@
 {
   "author": "Vaclav Novotny",
+  "bugs": "https://github.com/usertech/eslint-config/issues",
   "description": "ESLint preset enforcing same conventions in U+ projects",
   "keywords": [
     "eslint",
@@ -8,6 +9,10 @@
   "license": "ISC",
   "main": "index.js",
   "name": "@usertech/eslint-config-base",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usertech/eslint-config"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
