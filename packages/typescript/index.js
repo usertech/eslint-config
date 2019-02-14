@@ -24,6 +24,7 @@ module.exports = {
   ],
   plugins: ["@typescript-eslint"],
   rules: {
+    '@typescript-eslint/array-type': [2, 'array-simple'], // enforce readable style of array
     "@typescript-eslint/explicit-member-accessibility": 0, // prevent OOP conventions in code
     "@typescript-eslint/indent": 0, // handled by prettier
     "@typescript-eslint/no-explicit-any": 1, // allow use explicit any
