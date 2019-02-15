@@ -19,12 +19,6 @@ module.exports = {
         "newlines-between": "always"
       }
     ], // sort imports in groups, built-in first and external after, delimit with newline
-    "jsx-a11y/anchor-is-valid": [
-      "error",
-      {
-        components: [] // unsetting the default 'Link' since it could render <button>
-      }
-    ],
     "jsx-a11y/label-has-for": 0, // deprecated
     "jsx-a11y/label-has-associated-control": [
       2,
