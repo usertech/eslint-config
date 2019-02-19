@@ -64,8 +64,9 @@ After installation, follow these steps to unleash the full power of ESLint.
 1. Manually resolve errors that cannot be automatically fixed. Run `yarn lint --quiet` to report errors only and then fix errors or [disable rules with inline comments](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments).
 
 1. You may also suppress some rules in `.eslintconfig.js`, but think twice before you doso. If you thing some rule does not makes sense, eg. decreases code clean and readability, please, open discussion in Github issue tracker.
+ In case you are using non standard module resolution scheme, eg. absolute path `components/` resolved to `src/components`, you must install and [setup resolvers for eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import#resolvers), there is [resolver for webpack](https://www.npmjs.com/package/eslint-import-resolver-webpack). If you are using babel aliases, consider change them to Webpack aliases. Otherwise, you will need to disable eslint-plugin-import since it wont work for you.
 
-1. If you encounter some difficulties, dont hesitate to open ticket on Github issue tracker. ESlint may be hard to setup in monorepo scenarios or if you are using non standard module resolution schema.
+1. If you encounter some difficulties, dont hesitate to open ticket on Github issue tracker.
 
 1. As you correct all errors, commit your changes. Congratulation, you have now 100% fixed project. You should also fix all warning, but it is not that much importatnt, so we can continue to next step.
 
