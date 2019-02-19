@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.4](https://github.com/usertech/eslint-config/compare/v0.0.3...v0.0.4) (2019-02-19)
+
+
+### Bug Fixes
+
+* change rules according to internal review, use prettier ([897e6d1](https://github.com/usertech/eslint-config/commit/897e6d1))
+
+
+
+
+
 ## [0.0.3](https://github.com/usertech/eslint-config/compare/v0.0.2...v0.0.3) (2019-02-15)
 
 
