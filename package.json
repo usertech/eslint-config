@@ -9,7 +9,7 @@
   "scripts": {
     "prerelease": "yarn test",
     "release": "lerna publish",
-    "test": "jest --projects packages/typescript"
+    "test": "jest --projects packages/typescript packages/base"
   },
   "workspaces": [
     "packages/base",
