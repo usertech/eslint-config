@@ -12,6 +12,8 @@ packages/
 
 This project leverages [yarn workspaces](https://yarnpkg.com/lang/en/docs/workspaces/), to install all dependencies, just run `yarn` in root folder.
 
+Properties in ESLint setting objects (top properties, ESLint rules) are sorted alphabetically. If you edit the settings, keep this convetions.
+
 ### Commiting
 
 This project uses [conventional commits](https://www.conventionalcommits.org/) enforced via [commitlint](https://github.com/conventional-changelog/commitlint).
@@ -31,8 +33,7 @@ where `type` can be one of
 * `fix` - change patching a bug in codebase,
 * `refactor` - change not changing function but improving code structure,
 * `revert` - self explanatory,
-* `test` - adding new tests,
-* `BREAKING CHANGE` - special type for change that will break backward compatibility, eg. using config that will break previous version of ESLint.
+* `test` - adding new tests.
 
 optional `scope` may be provided to further describe field of change, eq `typescript` for change only affecting typescript config
 
