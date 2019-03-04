@@ -32,7 +32,7 @@ module.exports = {
     'no-console': [2, { allow: ['assert'] }], // avoid console, except asserts
     'no-unused-expressions': [2, { allowShortCircuit: true }], // we prefer functional code (expressions in front of statements)
     'react/destructuring-assignment': 0, // do not force to destructure props
-    'react/jsx-filename-extension': [2, { extensions: '.js' }], // we discourage `.jsx` extension
+    'react/jsx-filename-extension': [2, { extensions: ['.js'] }], // we discourage `.jsx` extension
     'react/forbid-prop-types': 0, // _some_ prop-type is better than _none_
     'react/jsx-indent': 0, // handled by prettier
     'react/jsx-indent-props': 0, // handled by prettier
