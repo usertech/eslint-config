@@ -10,7 +10,7 @@ For linting TypeScript project use [_@usertech/eslint-config-typescript_](https:
 
 1.  install ESLint and dependencies
 
-    `yarn add --dev eslint@5 @usertech/eslint-config-base`
+    `yarn add --dev eslint@^5 @usertech/eslint-config-base`
 
 1.  create/modify `.eslintrc.js` file in root of your project and paste following snippet inside
 

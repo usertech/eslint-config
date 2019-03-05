@@ -10,7 +10,7 @@ This config is fully capable of linting TypeScript files. You may drop TSLint in
 
 1.  install ESLint and dependencies
 
-    `yarn add --dev eslint@5 @usertech/eslint-config-typescript`
+    `yarn add --dev eslint@^5 @usertech/eslint-config-typescript`
 
 1.  create/modify `.eslintrc.js` file in root of your project and paste following snippet inside
 
