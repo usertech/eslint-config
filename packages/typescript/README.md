@@ -64,7 +64,8 @@ After installation, follow these steps to unleash the full power of ESLint.
 1. Manually resolve errors that cannot be automatically fixed. Run `yarn lint --quiet` to report errors only and then fix errors or [disable rules with inline comments](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments).
 
 1. You may also suppress some rules in `.eslintconfig.js`, but think twice before you doso. If you thing some rule does not makes sense, eg. decreases code clean and readability, please, open discussion in Github issue tracker.
- In case you are using non standard module resolution scheme, eg. absolute path `components/` resolved to `src/components`, you must install and [setup resolvers for eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import#resolvers), there is [resolver for webpack](https://www.npmjs.com/package/eslint-import-resolver-webpack). If you are using babel aliases, consider change them to Webpack aliases. Otherwise, you will need to disable eslint-plugin-import since it wont work for you.
+ 
+1. In case you are using non standard module resolution scheme, eg. absolute path `components/` resolved to `src/components`, you must install and [setup resolvers for eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import#resolvers), there is [resolver for webpack](https://www.npmjs.com/package/eslint-import-resolver-webpack) for Webpack aliases or [resolver for babel](https://github.com/tleunen/eslint-import-resolver-babel-module) for babel aliases. In case your resolution schema is more complicated and not supported by resolvers, you will need to disable eslint-plugin-import since it wont work for you.
 
 1. If you encounter some difficulties, dont hesitate to open ticket on Github issue tracker.
 
@@ -113,13 +114,3 @@ After installation, follow these steps to unleash the full power of ESLint.
    With this setup, prior to commit, changed files will be validated with ESLint and formatted with prettier. Please, check [Prettier, the opinionated formater](https://prettier.io) to instructions how to install and set it up. Prettier also nicely integrates with IDE and it is strongly recommend to use this integration.
 
    This ESLint config is prepared to integrate with prettier, so ESLint shall not report formatting errors handled by prettier (eg. ESLint will not check max lenght of line if prettier controls that).
-
-## Notice
-
-- Config is opinionated to some extent, settings might look odd. The rules are configured based on
-
-  1.  experience with preventing serious errors/bugs/problems during source code development/program execution
-  2.  usage of this preset on several production projects
-  3.  best-practices and common gotchas of the language, runtime and ecosystem.
-
-> Although, everyone can be wrong or have different opinion, so don't hesitate to challenge the status quo!
